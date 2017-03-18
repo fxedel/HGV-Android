@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">HGV</string>
+    <string name="key_logged_in">LoggedIn</string>
+    <string name="key_username">Username</string>
+    <string name="key_username_sec">UsernameSec</string>
+    <string name="key_password">Password</string>
+    <string name="key_password_sec">PasswordSec</string>
+    <string name="key_zugriff">Zugriff</string>
+    <string name="key_termine">termine_custom</string>
+    <string name="key_alias">HGV-Keystore-Alias</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_nav">NavActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_nav_test">NavTestActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <array name="zugriff_list">
+        <item>Vertretungsplan</item>
+        <item>Stundenplan</item>
+        <item>Termine</item>
+        <item>Schwarzes Brett</item>
+        <item>Elternbriefe</item>
+    </array>
+</resources>
