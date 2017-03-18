@@ -77,12 +77,12 @@ public class ElternbriefeFragment extends Fragment {
         } else {
             //Kein Internet
             progressBar.setVisibility(View.GONE);
-            errorTextView.setText("Download gescheitert: Es ist kein Internet verfügbar");
+            errorTextView.setText("Download gescheitert: Es ist kein Internet verf?gbar");
         }
     }
 
     /**
-     * Testet, ob die nötigen Permissions vorhanden sind und besorgt sie gegebnenfalls
+     * Testet, ob die n?tigen Permissions vorhanden sind und besorgt sie gegebnenfalls
      */
     private void checkPermissions() {
         //Testet, ob die Permission vorhanden ist
@@ -94,9 +94,9 @@ public class ElternbriefeFragment extends Fragment {
         //Permission ist nicht vorhanden
         //Testet, ob der Nutzer die Permission bereits einmal abgelehnt hat
         if (shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-            //Dialog als Erkärung, warum die Permission gebraucht wird, zeigen
+            //Dialog als Erk?rung, warum die Permission gebraucht wird, zeigen
             android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(context);
-            builder.setMessage("Die App braucht die Erlaubnis, um das PDF im Download-Ordner speicher zu können");
+            builder.setMessage("Die App braucht die Erlaubnis, um das PDF im Download-Ordner speicher zu k?nnen");
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -142,7 +142,7 @@ public class ElternbriefeFragment extends Fragment {
             InternetManager internetManager = new InternetManager();
             internetManager.phpsessid = phpsessid;
 
-            //Elternbrief-Übersicht herunterladen
+            //Elternbrief-?bersicht herunterladen
             ArrayList<Elternbrief> elternbriefe = new ArrayList<>();
 
             try {
@@ -214,7 +214,7 @@ public class ElternbriefeFragment extends Fragment {
                             new ElternbriefeFragment.Downloader.ElternbriefDownloader().execute(link);
                         } else {
                             //Kein Internet
-                            Toast.makeText(context, "Download gescheitert: Es ist kein Internet verfügbar", Toast.LENGTH_LONG).show();
+                            Toast.makeText(context, "Download gescheitert: Es ist kein Internet verf?gbar", Toast.LENGTH_LONG).show();
                         }
                     }
                 });
@@ -245,7 +245,7 @@ public class ElternbriefeFragment extends Fragment {
                 }
                 cardLayout.addView(messageTextView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
-                //LinearLayout und CardView dem jeweiligen Parent hinzufügen
+                //LinearLayout und CardView dem jeweiligen Parent hinzuf?gen
                 cardView.addView(cardLayout, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                 linearLayout.addView(cardView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
             }
@@ -265,7 +265,7 @@ public class ElternbriefeFragment extends Fragment {
 
             @Override
             protected Integer doInBackground(String... params) {
-                //Testen, ob die benötigte Permission vorhanden ist
+                //Testen, ob die ben?tigte Permission vorhanden ist
                 if (ContextCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                     //Permission vorhanden: => Download starten
 
@@ -274,7 +274,7 @@ public class ElternbriefeFragment extends Fragment {
 
                     return new InternetManager().downloadPdf(params[0]);
                 } else {
-                    //Permision Denied: => Fehler zurückgeben
+                    //Permision Denied: => Fehler zur?ckgeben
                     return 2;
                 }
             }
@@ -309,7 +309,7 @@ public class ElternbriefeFragment extends Fragment {
                     try {
                         startActivity(objIntent);
                     } catch (ActivityNotFoundException e) {
-                        Toast.makeText(context, "Sie haben keine App zum Öffnen des PDFs installiert", Toast.LENGTH_LONG).show();
+                        Toast.makeText(context, "Sie haben keine App zum ?ffnen des PDFs installiert", Toast.LENGTH_LONG).show();
                     }
                 }
             }

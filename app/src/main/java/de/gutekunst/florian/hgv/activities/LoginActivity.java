@@ -86,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
         //Testen, ob Daten eingegeben wurden
         if (email.length() == 0 || password.length() == 0) {
             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-            builder.setMessage("Bitte füllen Sie alle Felder aus");
+            builder.setMessage("Bitte f?llen Sie alle Felder aus");
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -107,7 +107,7 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             //Kein Internet
             AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-            builder.setMessage("Es ist kein Internet verfügbar");
+            builder.setMessage("Es ist kein Internet verf?gbar");
             builder.setPositiveButton("Nochmal Versuchen", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {

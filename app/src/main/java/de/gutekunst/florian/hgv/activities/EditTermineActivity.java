@@ -167,7 +167,7 @@ public class EditTermineActivity extends AppCompatActivity {
                     }
                 });
         builder.setPositiveButton(
-                "Hinzufügen", new DialogInterface.OnClickListener() {
+                "Hinzuf?gen", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick
                             (DialogInterface dialog, int which
