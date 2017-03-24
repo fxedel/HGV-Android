@@ -3,399 +3,255 @@
 
     <item
         is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jar="/home/felix/.android/build-cache/53af183655d8948027d63da831d5a34da1f8ab67/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_71ca19dea359ff9d05ece5ee9d1daa72962e6df1\classes.dex" />
+        revision="25.0.2"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_094ffe866f9a5acbe3fa7f1bb492eff701c8c51a/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Florian\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.5\2852e6e05fbb95076fc091f6d1780f1f8fe35e0f\commons-io-2.5.jar"
+        jar="/home/felix/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.8.3/65fd012581ded67bc20945d85c32b4598c3a9cf1/jsoup-1.8.3.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.2"
-        sha1="2852e6e05fbb95076fc091f6d1780f1f8fe35e0f">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-io-2.5_0673f8500230912d6f5208333725e51cf55aba59\classes.dex" />
+        revision="25.0.2"
+        sha1="65fd012581ded67bc20945d85c32b4598c3a9cf1">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/jsoup-1.8.3_14b2eb1dacf285e60341188a55f650f24e905762/classes.dex" />
     </item>
     <item
         is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-animated-vector-drawable-24.2.1_87c7d680dc5ff49cb81a86d0e381e76785ab53ca.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_a3d51e5f6b946e28d71408503a4eb6c506d69225\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_aa01e58fefb8ce44825ce041fa0e6a8be73bb672\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\internal_impl-24.2.1_71ca19dea359ff9d05ece5ee9d1daa72962e6df1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Florian\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.5\2852e6e05fbb95076fc091f6d1780f1f8fe35e0f\commons-io-2.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="2852e6e05fbb95076fc091f6d1780f1f8fe35e0f">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\commons-io-2.5_0673f8500230912d6f5208333725e51cf55aba59.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_87c7d680dc5ff49cb81a86d0e381e76785ab53ca\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-support-v4-24.2.1_de3e467424c9970a9cfd9e7a96d15a37f0dde647.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_de3e467424c9970a9cfd9e7a96d15a37f0dde647\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_2bbfd601206f897d7d17f78d49f09dde8ddb3895\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="deafa098f39e5f5ad2902cef5498d860bffc05a2">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2873752918261cd2d3e2dbd2a1e09e7a66ed6e05\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\internal_impl-24.2.1_aa01e58fefb8ce44825ce041fa0e6a8be73bb672.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Florian\.gradle\caches\modules-2\files-2.1\cz.msebera.android\httpclient\4.4.1.2\64950d33e2d3095cc831b414063bea45524103d4\httpclient-4.4.1.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="64950d33e2d3095cc831b414063bea45524103d4">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\httpclient-4.4.1.2_7ed2bd224ac4467812fec35053a27e20008f33a5.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_de0d8ab802c994d99ca7a84598c40eac4448dbb1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_33c97aafebf8372016fbbfff38fc8c123188e00b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Florian\.gradle\caches\modules-2\files-2.1\cz.msebera.android\httpclient\4.4.1.2\64950d33e2d3095cc831b414063bea45524103d4\httpclient-4.4.1.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="64950d33e2d3095cc831b414063bea45524103d4">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\httpclient-4.4.1.2_7ed2bd224ac4467812fec35053a27e20008f33a5\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-support-fragment-24.2.1_de0d8ab802c994d99ca7a84598c40eac4448dbb1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\internal_impl-24.2.1_beda9d96f885a9d3bb4f37f0ccd3488785913de5.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_beda9d96f885a9d3bb4f37f0ccd3488785913de5\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\internal_impl-24.2.1_33c97aafebf8372016fbbfff38fc8c123188e00b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\internal_impl-24.2.1_36a3770450878407b9ef57ac81eae755ce2092d8.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_955bf9f1bb39b9bbe90d0fb6e9dc094d216e2514\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_7e6048fc71e861d57f1a6d682cf5ff0fae2c58ff\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_36a3770450878407b9ef57ac81eae755ce2092d8\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-24.2.1_955bf9f1bb39b9bbe90d0fb6e9dc094d216e2514.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-support-vector-drawable-24.2.1_7e6048fc71e861d57f1a6d682cf5ff0fae2c58ff.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="865617ce37a22fa5a73c8218978e0f9297a2a281">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0294f18d9e5066a2c8ffe0990879fc36de441414\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-support-compat-24.2.1_894982df9d6d56b0876898c8031ba9ab903d3bbd.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\Android SDK\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_5b52076c5bf2f6f59e1b39adda12299f1432c417\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\Android SDK\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\support-annotations-24.2.1_5b52076c5bf2f6f59e1b39adda12299f1432c417.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_c66f7f7ce252decf216f5b4f7ce4cefbbff36e33\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_36888c0c9b48f82a042018a0cc589b7994027817\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-support-media-compat-24.2.1_2bbfd601206f897d7d17f78d49f09dde8ddb3895.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-cardview-v7-24.0.0_d2fd71a88e2217c978f9d244b63cf3899af95357.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-recyclerview-v7-24.2.1_36888c0c9b48f82a042018a0cc589b7994027817.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.2"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-support-core-utils-24.2.1_c66f7f7ce252decf216f5b4f7ce4cefbbff36e33.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-24.0.0_d2fd71a88e2217c978f9d244b63cf3899af95357\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_894982df9d6d56b0876898c8031ba9ab903d3bbd\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-support-core-ui-24.2.1_407aff7675439ecbb2321b05f2b2b0db270cb685.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Florian\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.8.3\65fd012581ded67bc20945d85c32b4598c3a9cf1\jsoup-1.8.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="65fd012581ded67bc20945d85c32b4598c3a9cf1">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\jsoup-1.8.3_386aa0f0143f8ed988f7e3ba81c6b084921df368\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_407aff7675439ecbb2321b05f2b2b0db270cb685\classes.dex" />
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_27161d68e2700ec2054e18d1207e91c713902afc.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_65b1f714d34b062f25bcebc29ee2f54704dc81d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.8.3/65fd012581ded67bc20945d85c32b4598c3a9cf1/jsoup-1.8.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="65fd012581ded67bc20945d85c32b4598c3a9cf1">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/jsoup-1.8.3_14b2eb1dacf285e60341188a55f650f24e905762.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_6c0d5cb7224504eb2b955fe6088dad960c79b1b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_66dc33c0807778606936352f29cfc3617f5d4a9c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\com.android.support-design-24.2.1_a3d51e5f6b946e28d71408503a4eb6c506d69225.jar" />
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.2.1_7db1915a3c50a626a12695ce1929725fc2a0ceb8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Florian\.gradle\caches\modules-2\files-2.1\org.jsoup\jsoup\1.8.3\65fd012581ded67bc20945d85c32b4598c3a9cf1\jsoup-1.8.3.jar"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.2"
-        sha1="65fd012581ded67bc20945d85c32b4598c3a9cf1">
-        <dex dex="D:\Android\projects\android_studio\HGV-Android\app\build\intermediates\pre-dexed\release\jsoup-1.8.3_386aa0f0143f8ed988f7e3ba81c6b084921df368.jar" />
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_d907a7f3cb4e3e16fb0b7d147cc17b499416b5b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_78af862722bb9ecac1b6b54741d56c65c1969b75.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_c319318831de799fb0733f370dc5cf1f90bca2ed.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2c7a752b34dc53a9ddb53c969d9e56bb072ec26">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b1c9f0f84e75a481f067ddf8504d6b97d22ce4d7/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_623b8c19fcb5a99796f0afc7cdf0e98b0c313e82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_fb3964212fa83a6fda5c0a359897c33415304599.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/felix/.android/build-cache/7b274b50b56329cfe464f01724d68c1ac25edf82/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0acbdedae4a08a5722918ca7f9b68dee8eade624/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/felix/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.4.1.2/64950d33e2d3095cc831b414063bea45524103d4/httpclient-4.4.1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64950d33e2d3095cc831b414063bea45524103d4">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/httpclient-4.4.1.2_c097968d1b0795216ec7dae6bceba62e422baac0/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.4.1.2/64950d33e2d3095cc831b414063bea45524103d4/httpclient-4.4.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="64950d33e2d3095cc831b414063bea45524103d4">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/httpclient-4.4.1.2_c097968d1b0795216ec7dae6bceba62e422baac0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_5432de1409d9210039a9ad6cacefe588528eb1c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_86dc0e8905d84a74f98befb82f04364603146ac8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_db6649e6e2d4f516ce6fa45005ebaa9b28777367.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-24.0.0_1122248bb5568ddf67a0dbc720bf25fc2c381cd4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_8515df8ccf421e03faf4a87b59574c653c02cac0.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2050b99525dfe96ea916ecc489fa7fcb2ee8d141/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="2852e6e05fbb95076fc091f6d1780f1f8fe35e0f">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/commons-io-2.5_de51868f46fb2f46adf9524ac46d18d003b94a4a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/felix/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2852e6e05fbb95076fc091f6d1780f1f8fe35e0f">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-2.5_de51868f46fb2f46adf9524ac46d18d003b94a4a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_0658032f994b5ebe85864b6375b5cfad61365168.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_48420df2009550c8ee63affee796f078a43590e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/felix/Development/HGV-Android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/home/felix/Development/HGV-Android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_9ba6d3ae94b7a3b3ac0ed42d2712c163fde68bed.jar" />
     </item>
 
 </items>
