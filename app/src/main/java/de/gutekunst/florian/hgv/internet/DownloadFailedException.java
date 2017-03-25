@@ -5,6 +5,7 @@ public class DownloadFailedException extends Exception {
     public static final int ERR_WRONG_USERNAME = 1;
     public static final int ERR_ADRESS_UNREACHABLE = 2;
     public static final int ERR_UNKNOWN = 3;
+    public static final int SELECTING_FAILED = 4;
 
 
     private int reason;

@@ -3,13 +3,15 @@ package de.gutekunst.florian.hgv.activities;
 import android.app.*;
 import android.content.*;
 import android.os.*;
-import android.support.v7.app.*;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.*;
 
 import de.gutekunst.florian.hgv.*;
 import de.gutekunst.florian.hgv.internet.*;
 
 public class MainActivity extends AppCompatActivity {
+
+    private int id = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,17 +25,17 @@ public class MainActivity extends AppCompatActivity {
             //Anmeldedaten holen
             String username = memory.getSecureString(getString(R.string.key_username_sec), getString(R.string.key_alias), null);
             String password = memory.getSecureString(getString(R.string.key_password_sec), getString(R.string.key_alias), null);
+            id = memory.getInt(getString(R.string.key_id), -1);
 
             //Fehler beim Holen der Anmeldedaten
-            if (username == null || password == null) {
+            if (username == null || password == null || id == -1) {
                 //LoginActivity starten
                 Intent i = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(i);
                 finish();
-                return;
+            } else {
+                new Login().execute(username, password);
             }
-
-            new Login().execute(username, password);
         } else {
             //LoginActivity starten
             Intent i = new Intent(MainActivity.this, LoginActivity.class);
@@ -142,9 +144,11 @@ public class MainActivity extends AppCompatActivity {
                         })
                         .create().show();
             } else {
+                //Login erfolgreich
                 //NavDrawerActivity starten
                 Intent i = new Intent(MainActivity.this, NavDrawerActivity.class);
                 i.putExtra("phpsessid", phpsessid);
+                i.putExtra("id", id);
                 int selected = getIntent().getIntExtra("selected", -1);
                 if (selected != -1) {
                     i.putExtra("selected", getIntent().getIntExtra("selected", 0));

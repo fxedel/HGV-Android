@@ -17,6 +17,7 @@ public class TermineAllgemeinFragment extends Fragment {
     private WebView webView;
     private Context context;
     private String phpsessid;
+    private int id;
     private int selected;
 
     @Nullable
@@ -25,7 +26,9 @@ public class TermineAllgemeinFragment extends Fragment {
         NavDrawerActivity parent = (NavDrawerActivity) getActivity();
 
         phpsessid = parent.getPhpsessid();
+        id = parent.getId();
         selected = parent.getSelected();
+
 
         return inflater.inflate(R.layout.fragment_termine_allgemein, container, false);
     }
@@ -70,6 +73,7 @@ public class TermineAllgemeinFragment extends Fragment {
         protected String doInBackground(Void... params) {
             InternetManager internetManager = new InternetManager();
             internetManager.phpsessid = phpsessid;
+            internetManager.id = id;
 
             String termine = "";
 
@@ -100,6 +104,8 @@ public class TermineAllgemeinFragment extends Fragment {
                 } else if (error == 2) {
                     //Das Elternportal ist nicht erreichbar
                     webView.loadDataWithBaseURL("empty", "Download gescheitert: Das Elternportal ist nicht erreichbar", "text/html", "UTF-8", null);
+                } else if (error == 4) {
+                    webView.loadDataWithBaseURL("empty", "Download gescheitert: Fehler beim Selektieren des Kindes", "text/html", "UTF-8", null);
                 }
             } else {
                 //Termine darstellen

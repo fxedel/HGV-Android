@@ -21,26 +21,40 @@
         android:textColor="#000000"
         android:textSize="@dimen/error_text_size"/>
 
-    <WebView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/vert_wv_today"
-        android:layout_centerHorizontal="true"
-        android:background="#ffffff"/>
+        android:layout_alignWithParentIfMissing="true">
 
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/vert_wv_tomorrow"
-        android:layout_centerHorizontal="true"
-        android:background="#ffffff"
-        android:layout_below="@id/vert_wv_today"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/vert_wv_stand"
-        android:layout_centerHorizontal="true"
-        android:background="#ffffff"
-        android:layout_below="@id/vert_wv_tomorrow"/>
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vert_wv_today"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"/>
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vert_wv_tomorrow"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:layout_below="@id/vert_wv_today"/>
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vert_wv_stand"
+                android:layout_centerHorizontal="true"
+                android:background="#ffffff"
+                android:layout_below="@id/vert_wv_tomorrow"/>
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

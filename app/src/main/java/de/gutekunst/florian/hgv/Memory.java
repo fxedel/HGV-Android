@@ -72,7 +72,7 @@ public class Memory {
     }
 
     public Set<String> getStringSet(String key, Set<String> defaultValue) {
-        return new HashSet<String>(memory.getStringSet(key, defaultValue));
+        return new HashSet<>(memory.getStringSet(key, defaultValue));
     }
 
     public boolean[] loadBooleanArray(String arrayName) {
@@ -130,19 +130,14 @@ public class Memory {
     public void clear() {
         editor.clear().commit();
 
-        //TODO Delete Keystore aliases
         ArrayList<String> keyAliases = new ArrayList<>();
         try {
             Enumeration<String> aliases = keyStore.aliases();
             while (aliases.hasMoreElements()) {
-                keyAliases.add(aliases.nextElement());
+                deleteKey(aliases.nextElement());
             }
         } catch(Exception e) {
           // Do nothing
-        }
-
-        for (String alias : keyAliases) {
-            deleteKey(alias);
         }
     }
 

@@ -29,6 +29,7 @@ public class SchwarzesBrettFragment extends Fragment {
     private LinearLayout linearLayout;
     private static final int PERISSION_REQUEST_WRITE_EXTERNAL_STORAGE = 13;
     private String phpsessid;
+    private int id;
     private float scale;
     private int selected;
 
@@ -38,6 +39,7 @@ public class SchwarzesBrettFragment extends Fragment {
         NavDrawerActivity parent = (NavDrawerActivity) getActivity();
 
         phpsessid = parent.getPhpsessid();
+        id = parent.getId();
         selected = parent.getSelected();
 
         return inflater.inflate(R.layout.fragment_schwarzes_brett, container, false);
@@ -137,6 +139,7 @@ public class SchwarzesBrettFragment extends Fragment {
             //Username & Passwort holen
             InternetManager internetManager = new InternetManager();
             internetManager.phpsessid = phpsessid;
+            internetManager.id = id;
 
             //Schwarzes Brett herunterladen
             SchwarzesBrett schwarzesBrett = new SchwarzesBrett();
@@ -168,6 +171,8 @@ public class SchwarzesBrettFragment extends Fragment {
                     startActivity(i);
                 } else if (error == 2) {
                     errorTextView.setText("Download gescheitert: Das Elternportal ist nicht erreichbar");
+                } else if (error == 4) {
+                    errorTextView.setText("Download gescheitert: Fehler beim Selektieren des Kindes");
                 }
             } else {
                 //Download erfolgreich

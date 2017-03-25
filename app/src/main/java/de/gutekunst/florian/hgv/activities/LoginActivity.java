@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         //Toolbar setzen
-        android.support.v7.widget.Toolbar toolbar = (Toolbar) findViewById(R.id.login_toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.login_toolbar);
         setSupportActionBar(toolbar);
 
         memory = new Memory(LoginActivity.this);
@@ -121,6 +121,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private class Login extends AsyncTask<String, Void, Integer> {
 
+        private String phpsessid = "";
+
         @Override
         protected void onPreExecute() {
             loginButton.setEnabled(false);
@@ -140,6 +142,7 @@ public class LoginActivity extends AppCompatActivity {
             try {
                 //Loggt den Nutzer ein
                 loginSuccessful = internetManager.login(params[0], params[1]);
+                phpsessid = internetManager.phpsessid;
 
                 if (!loginSuccessful) {
                     error = 1;
@@ -178,8 +181,9 @@ public class LoginActivity extends AppCompatActivity {
 
                 Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT);
 
-                //MainActivity starten
-                Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                //KindAuswaehlenActivity starten
+                Intent i = new Intent(LoginActivity.this, KindAuswaehlenActivity.class);
+                i.putExtra("phpsessid", phpsessid);
                 startActivity(i);
             } else {
                 //Login fehlgeschlagen

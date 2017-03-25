@@ -22,18 +22,24 @@ import cz.msebera.android.httpclient.cookie.*;
 import cz.msebera.android.httpclient.impl.client.*;
 import cz.msebera.android.httpclient.impl.cookie.*;
 import cz.msebera.android.httpclient.message.*;
+import de.gutekunst.florian.hgv.*;
 import de.gutekunst.florian.hgv.elternbrief.*;
 import de.gutekunst.florian.hgv.schwarzesbrett.*;
 
 public class InternetManager {
 
+    public static final String baseUrl = "hugyvat";
+
     public String phpsessid = "";
     private BasicCookieStore bc;
     private HttpClient hc;
     private String contentVertretungsplan = "";
+    public int id;
+
+    private String selcon;
 
     //"service/vertretungsplan" when "hugyvat.eltern-portal.org/service/vertretungsplan" should be downloaded
-    private String downloadUrl(String url) {
+    private String downloadUrl(String url) throws DownloadFailedException {
         String content = "";
 
         if (hc == null) {
@@ -51,10 +57,27 @@ public class InternetManager {
         }
 
         try {
-            //Request Vertretungsplan page
-            HttpResponse r = hc.execute(new HttpGet("https://hugyvat.eltern-portal.org/" + url));
+            //Request
+            HttpResponse r = hc.execute(new HttpGet("https://" + baseUrl + ".eltern-portal.org/" + url));
 
             content = IOUtils.toString(r.getEntity().getContent(), "UTF-8");
+            //Testen, ob die Daten die des ausgewählten Schülers sind
+            if (!isSelected(id, content)) {
+                if (id == -1) {
+                    throw new DownloadFailedException(DownloadFailedException.SELECTING_FAILED);
+                }
+
+                if (!select(id)) {
+                    throw new DownloadFailedException(DownloadFailedException.SELECTING_FAILED);
+                }
+
+                r = hc.execute(new HttpGet("https://" + baseUrl + ".eltern-portal.org/" + url));
+                content = IOUtils.toString(r.getEntity().getContent(), "UTF-8");
+
+                if (!isSelected(id, content)) {
+                    throw new DownloadFailedException(DownloadFailedException.SELECTING_FAILED);
+                }
+            }
         } catch (IOException e1) {
             e1.printStackTrace();
         }
@@ -72,13 +95,13 @@ public class InternetManager {
         String content = "";
 
         try {
-            hc.execute(new HttpGet("https://hugyvat.eltern-portal.org"));
+            hc.execute(new HttpGet("https://" + baseUrl + ".eltern-portal.org"));
 
             HttpPost post = new HttpPost("https://eltern-portal.org/includes/project/auth/login.php");
             post.setEntity(new UrlEncodedFormEntity(nvp));
             hc.execute(post);
 
-            HttpResponse r = hc.execute(new HttpGet("https://hugyvat.eltern-portal.org/service/vertretungsplan"));
+            HttpResponse r = hc.execute(new HttpGet("https://" + baseUrl + ".eltern-portal.org/service/vertretungsplan"));
 
             content = IOUtils.toString(r.getEntity().getContent(), "UTF-8");
 
@@ -100,6 +123,55 @@ public class InternetManager {
         Document doc = Jsoup.parse(content);
 
         return doc.select("div.list, div.bold, div.full_width, div.text_center").size() != 0;
+    }
+
+    /**
+     * @return Eine Liste aller mit dem Account verknüpften Kinder
+     */
+    public ArrayList<Kind> getKinder() {
+        ArrayList<Kind> kinder = new ArrayList<>();
+
+        String content = null;
+        try {
+            if (hc == null) {
+                bc = new BasicCookieStore();
+                BasicClientCookie cookie = new BasicClientCookie("PHPSESSID", phpsessid);
+                cookie.setDomain("eltern-portal.org");
+                cookie.setPath("/");
+                cookie.setSecure(true);
+                cookie.setAttribute(BasicClientCookie.PATH_ATTR, "/");
+                cookie.setAttribute(BasicClientCookie.DOMAIN_ATTR, ".eltern-portal.org");
+                cookie.setAttribute(BasicClientCookie.SECURE_ATTR, null);
+                bc.addCookie(cookie);
+
+                hc = HttpClients.custom().setDefaultCookieStore(bc).build();
+            }
+
+            //Request page
+            HttpResponse r = hc.execute(new HttpGet("https://" + baseUrl + ".eltern-portal.org/start"));
+            content = IOUtils.toString(r.getEntity().getContent(), "UTF-8");
+        } catch (IOException e) {
+            content = "";
+            e.printStackTrace();
+        }
+
+        Document doc = Jsoup.parse(content);
+        Elements children = doc.select("a.children");
+
+        for (Element e : children) {
+            Kind k = new Kind();
+
+            String onclick = e.attr("onclick");
+            int id = Integer.parseInt(onclick.substring(onclick.indexOf("(") + 1, onclick.indexOf(",")));
+            String name = e.attr("title");
+
+            k.setId(id);
+            k.setName(name);
+
+            kinder.add(k);
+        }
+
+        return kinder;
     }
 
     public String getVertretungsplanToday() throws DownloadFailedException {
@@ -364,5 +436,96 @@ public class InternetManager {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
         return netInfo != null && netInfo.isConnectedOrConnecting();
+    }
+
+    /**
+     * Testet, ob das Kind ausgewählt ist
+     *
+     * @param id   ID des Kindes
+     * @param html HTML-Code der Website
+     */
+    private boolean isSelected(int id, String html) {
+        Document doc = Jsoup.parse(html);
+
+        Elements children = doc.select("a.children");
+
+        for (Element e : children) {
+            String onclick = e.attr("onclick");
+            int sid = Integer.parseInt(onclick.substring(onclick.indexOf("(") + 1, onclick.indexOf(",")));
+
+            if (sid == id) {
+                Element img = e.select("img.ch_img").first();
+
+                return !img.attr("src").equals("//eltern-portal.org/includes/project/images/kind_grau.png");
+            }
+        }
+
+        return false;
+    }
+
+    private boolean select(int id) throws IOException {
+        String url = "https://" + baseUrl + ".eltern-portal.org/origin/set_child.php?id=" + id;
+        HttpPost post = new HttpPost(url);
+        HttpResponse r = hc.execute(post);
+        selcon = IOUtils.toString(r.getEntity().getContent(), "UTF-8");
+        Log.d("select", selcon);
+        return selcon.equals("1");
+    }
+
+    /**
+     * Debug-Methode. Liefert alle Kinder und selektiert die ID
+     *
+     * @return
+     */
+    public String diag() {
+        String content = "";
+
+        boolean select = false;
+
+        if (hc == null) {
+            bc = new BasicCookieStore();
+            BasicClientCookie cookie = new BasicClientCookie("PHPSESSID", phpsessid);
+            cookie.setDomain("eltern-portal.org");
+            cookie.setPath("/");
+            cookie.setSecure(true);
+            cookie.setAttribute(BasicClientCookie.PATH_ATTR, "/");
+            cookie.setAttribute(BasicClientCookie.DOMAIN_ATTR, ".eltern-portal.org");
+            cookie.setAttribute(BasicClientCookie.SECURE_ATTR, null);
+            bc.addCookie(cookie);
+
+            hc = HttpClients.custom().setDefaultCookieStore(bc).build();
+        }
+
+        try {
+            select = select(id);
+
+            //Request page
+            HttpResponse r = hc.execute(new HttpGet("https://" + baseUrl + ".eltern-portal.org/start"));
+
+            content = IOUtils.toString(r.getEntity().getContent(), "UTF-8");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String diag = "ID: " + id + "<br>";
+
+        Document doc = Jsoup.parse(content);
+        Elements children = doc.select("a.children");
+
+        for (Element e : children) {
+            String onclick = e.attr("onclick");
+            int id = Integer.parseInt(onclick.substring(onclick.indexOf("(") + 1, onclick.indexOf(",")));
+
+            String name = e.attr("title");
+
+            Element img = e.select("img.ch_img").first();
+            boolean selected = !img.attr("src").equals("//eltern-portal.org/includes/project/images/kind_grau.png");
+
+            diag += name + " (ID " + id + ")" + (selected ? " (selektiert)" : "") + "<br>";
+        }
+
+        diag += select ? "Selektieren erfolgreich" : ("Selektieren fehlgeschlagen: (" + selcon + ")");
+
+        return diag;
     }
 }

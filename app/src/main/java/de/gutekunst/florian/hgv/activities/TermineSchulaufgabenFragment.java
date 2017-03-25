@@ -21,6 +21,7 @@ public class TermineSchulaufgabenFragment extends Fragment {
     private Context context;
     private TextView errorTextView;
     private String phpsessid;
+    private int id;
     private int selected;
 
     @Nullable
@@ -29,6 +30,7 @@ public class TermineSchulaufgabenFragment extends Fragment {
         NavDrawerActivity parent = (NavDrawerActivity) getActivity();
 
         phpsessid = parent.getPhpsessid();
+        id = parent.getId();
         selected = parent.getSelected();
 
         return inflater.inflate(R.layout.fragment_termine_schulaufgaben, container, false);
@@ -70,6 +72,7 @@ public class TermineSchulaufgabenFragment extends Fragment {
         protected String doInBackground(Void... params) {
             InternetManager internetManager = new InternetManager();
             internetManager.phpsessid = phpsessid;
+            internetManager.id = id;
 
             String termine = "";
 
@@ -97,13 +100,15 @@ public class TermineSchulaufgabenFragment extends Fragment {
                     startActivity(i);
                 } else if (error == 2) {
                     errorTextView.setText("Download gescheitert: Das Elternportal ist nicht erreichbar");
+                } else if (error == 4) {
+                    errorTextView.setText("Download gescheitert: Fehler beim Selektieren des Kindes");
                 }
             } else {
                 Set<String> termineSet = new Memory(context).getStringSet(getString(R.string.key_termine), new HashSet<String>());
                 ArrayList<Vector<String>> termineList = new ArrayList<>();
                 for (String s : termineSet) {
                     String[] termin = s.split("\\\\");
-                    termineList.add(new Vector<String>(Arrays.asList(termin)));
+                    termineList.add(new Vector<>(Arrays.asList(termin)));
                 }
 
                 webView.loadDataWithBaseURL("empty", Termine.insert(string, termineList), "text/html", "UTF-8", null);

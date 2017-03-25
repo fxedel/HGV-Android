@@ -20,6 +20,7 @@ public class VertretungsplanFragment extends Fragment {
     private ProgressBar progressBar;
     private TextView errorTextView;
     private String phpsessid;
+    private int id;
     private int selected;
 
     @Nullable
@@ -28,6 +29,7 @@ public class VertretungsplanFragment extends Fragment {
         NavDrawerActivity parent = (NavDrawerActivity) getActivity();
 
         phpsessid = parent.getPhpsessid();
+        id = parent.getId();
         selected = parent.getSelected();
 
         return inflater.inflate(R.layout.fragment_vertretungsplan, container, false);
@@ -61,6 +63,7 @@ public class VertretungsplanFragment extends Fragment {
     private class Downloader extends AsyncTask<Void, Void, String[]> {
 
         private int error = 0;
+        private String diag = "";
 
         @Override
         protected void onPreExecute() {
@@ -71,6 +74,7 @@ public class VertretungsplanFragment extends Fragment {
         protected String[] doInBackground(Void... params) {
             InternetManager internetManager = new InternetManager();
             internetManager.phpsessid = phpsessid;
+            internetManager.id = id;
 
             String vertretungsplanToday = "", vertretungsplanTomorrow = "", stand = "";
 
@@ -97,6 +101,7 @@ public class VertretungsplanFragment extends Fragment {
 
             if (error != 0) {
                 if (error == 1) {
+                    //Falsche Anmeldedaten
                     Intent i = new Intent(context, MainActivity.class);
                     i.putExtra("selected", selected);
                     startActivity(i);
@@ -104,8 +109,11 @@ public class VertretungsplanFragment extends Fragment {
                     errorTextView.setText("Download gescheitert: Das Elternportal ist nicht erreichbar");
                 } else if (error == 3) {
                     errorTextView.setText("Download gescheitert");
+                } else if (error == 4) {
+                    errorTextView.setText("Download gescheitert: Fehler beim Selektieren des Kindes");
                 }
             } else {
+                //Download erfolgreich
                 today.loadDataWithBaseURL("empty", strings[0], "text/html", "UTF-8", null);
                 tomorrow.loadDataWithBaseURL("empty", strings[1], "text/html", "UTF-8", null);
                 stand.loadDataWithBaseURL("empty", strings[2], "text/html", "UTF-8", null);

@@ -44,6 +44,12 @@
             android:noHistory="true"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name=".activities.KindAuswaehlenActivity"
+            android:noHistory="true"
+            android:label="@string/title_activity_kind_auswaehlen"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

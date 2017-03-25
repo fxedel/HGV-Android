@@ -28,6 +28,7 @@ public class NavDrawerActivity extends AppCompatActivity {
     private Menu menu;
     private boolean showTermineItem;
     private String phpsessid = "";
+    private int id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class NavDrawerActivity extends AppCompatActivity {
         listOptions = getResources().getStringArray(R.array.zugriff_list);
 
         phpsessid = getIntent().getStringExtra("phpsessid");
+        id = getIntent().getIntExtra("id", -1);
 
         //Toolbar holen
         toolbar = (Toolbar) findViewById(R.id.nav_toolbar);
@@ -123,7 +125,7 @@ public class NavDrawerActivity extends AppCompatActivity {
         drawerList = (ListView) findViewById(R.id.left_drawer);
 
         //Liste initialisieren
-        drawerList.setAdapter(new ArrayAdapter<String>(NavDrawerActivity.this, android.R.layout.simple_list_item_1, listOptions));
+        drawerList.setAdapter(new ArrayAdapter<>(NavDrawerActivity.this, android.R.layout.simple_list_item_1, listOptions));
         drawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -192,11 +194,7 @@ public class NavDrawerActivity extends AppCompatActivity {
                 break;
         }
 
-        if (fragment instanceof TermineFragment) {
-            showTermineItem = true;
-        } else {
-            showTermineItem = false;
-        }
+        showTermineItem = fragment instanceof TermineFragment;
         invalidateOptionsMenu();
 
         //Fragment austauschen
@@ -247,6 +245,7 @@ public class NavDrawerActivity extends AppCompatActivity {
                 //EditTermineActivity starten
                 i = new Intent(NavDrawerActivity.this, EditTermineActivity.class);
                 i.putExtra("phpsessid", phpsessid);
+                i.putExtra("id", id);
                 startActivity(i);
                 return true;
             default:
@@ -264,6 +263,10 @@ public class NavDrawerActivity extends AppCompatActivity {
 
     public String getPhpsessid() {
         return phpsessid;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public int getSelected() {

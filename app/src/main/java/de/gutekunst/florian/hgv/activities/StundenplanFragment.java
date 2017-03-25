@@ -17,6 +17,7 @@ public class StundenplanFragment extends Fragment {
     private WebView stundenplan;
     private ProgressBar progressBar;
     private String phpsessid;
+    private int id;
     private int selected;
 
     @Nullable
@@ -25,6 +26,7 @@ public class StundenplanFragment extends Fragment {
         NavDrawerActivity parent = (NavDrawerActivity) getActivity();
 
         phpsessid = parent.getPhpsessid();
+        id = parent.getId();
         selected = parent.getSelected();
 
         return inflater.inflate(R.layout.fragment_stundenplan, container, false);
@@ -69,6 +71,8 @@ public class StundenplanFragment extends Fragment {
         protected String doInBackground(Void... params) {
             InternetManager internetManager = new InternetManager();
             internetManager.phpsessid = phpsessid;
+            internetManager.id = id;
+
 
             String stundenplanString = "";
 
@@ -99,6 +103,8 @@ public class StundenplanFragment extends Fragment {
                 } else if (error == 2) {
                     //Das Elternportal ist nicht erreichbar
                     stundenplan.loadDataWithBaseURL("empty", "Download gescheitert: Das Elternportal ist nicht erreichbar", "text/html", "UTF-8", null);
+                } else if (error == 4) {
+                    stundenplan.loadDataWithBaseURL("empty", "Download gescheitert: Fehler beim Selektieren des Kindes", "text/html", "UTF-8", null);
                 }
             } else {
                 stundenplan.loadDataWithBaseURL("empty", string, "text/html", "UTF-8", null);

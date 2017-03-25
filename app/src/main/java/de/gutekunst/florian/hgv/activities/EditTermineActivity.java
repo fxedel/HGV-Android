@@ -20,6 +20,7 @@ public class EditTermineActivity extends AppCompatActivity {
     private LinearLayout ll;
     private ImageButton addButton;
     private String phpsessid;
+    private int id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class EditTermineActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit_termine);
 
         phpsessid = getIntent().getStringExtra("phpsessid");
+        id = getIntent().getIntExtra("id", -1);
 
         //Toolbar
         android.support.v7.widget.Toolbar toolbar = (Toolbar) findViewById(R.id.et_toolbar);
@@ -176,7 +178,7 @@ public class EditTermineActivity extends AppCompatActivity {
                         String terminName = terminEditText.getText().toString().trim();
                         String date = String.format("%02d", datePicker.getDayOfMonth()) + "." + String.format("%02d", datePicker.getMonth() + 1) + "." + String.format("%04d", datePicker.getYear());
 
-                        if (terminName.indexOf("\\") != -1) {
+                        if (!terminName.contains("\\")) {
                             //Im Terminnamen kommt das verbotene Zeichen '\' vor -> Nutzer benachrichtigen
                             AlertDialog.Builder errorBuilder = new AlertDialog.Builder(EditTermineActivity.this);
 
@@ -217,6 +219,7 @@ public class EditTermineActivity extends AppCompatActivity {
             );
             i.putExtra("selected", 2);
             i.putExtra("phpsessid", phpsessid);
+            i.putExtra("id", id);
             startActivity(i);
         }
 
@@ -231,6 +234,7 @@ public class EditTermineActivity extends AppCompatActivity {
             );
             i.putExtra("selected", 2);
             i.putExtra("phpsessid", phpsessid);
+            i.putExtra("id", id);
             startActivity(i);
 
             return true;
